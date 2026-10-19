@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arpit Bhomia · competitive programmer</title>
+  <meta name="description" content="Arpit Bhomia: competitive programmer and problem solver. CSE at IIT Bhilai, Codeforces Expert (max 1810), CodeChef 5★ (max 2007), ICPC Regionalist (AIR 40), Software Engineering Intern at Visa." />
+  <meta name="theme-color" content="#0e0d0c" />
+  <meta property="og:title" content="Arpit Bhomia · competitive programmer" />
+  <meta property="og:description" content="Codeforces Expert · CodeChef 5★ · ICPC Regionalist (AIR 40) · SWE Intern at Visa · IIT Bhilai" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e0d0c'/%3E%3Cpath d='M14 44 11 22l12 10 9-16 9 16 12-10-3 22Z' fill='%23f2c14e'/%3E%3Crect x='14' y='46' width='36' height='5' rx='2' fill='%23f2c14e'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+
+  <!-- intro curtain -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro__name"><span>Arpit</span> <em>Bhomia</em></div>
+    <div class="intro__bar"><i id="introBar"></i></div>
+    <div class="intro__count mono"><span id="introCount">0</span></div>
+  </div>
+
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo mono" data-magnetic aria-label="kingAB, back to top"><svg class="crown" viewBox="0 0 32 24" aria-hidden="true"><defs><linearGradient id="crownGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd66e"/><stop offset="1" stop-color="#ff8a5b"/></linearGradient></defs><path d="M3 19 1.5 6.5l7.5 6L16 2l7 10.5 7.5-6L29 19Z" fill="url(#crownGrad)" stroke="#ffd66e" stroke-width="1" stroke-linejoin="round"/><rect x="3" y="20" width="26" height="3" rx="1.2" fill="url(#crownGrad)"/><circle cx="16" cy="13" r="1.8" fill="#0e0d0c"/><circle cx="9" cy="15" r="1.2" fill="#0e0d0c"/><circle cx="23" cy="15" r="1.2" fill="#0e0d0c"/></svg><span class="nav__word">king<b>AB</b></span></a>
+    <nav class="nav__links" id="navLinks" aria-label="Sections">
+      <a href="#cp">CP</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#coursework">Coursework</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="assets/Arpit_Bhomia_Resume.pdf" class="nav__cv mono" target="_blank" rel="noopener" data-magnetic>résumé.pdf</a>
+    <button class="nav__menu mono" id="menuBtn" aria-expanded="false" aria-controls="navLinks">menu</button>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__inner">
+        <p class="kicker mono h-in"><span class="dot"></span> competitive programmer · problem solver</p>
+        <h1 class="hero__name" aria-label="Arpit Bhomia">
+          <span class="line"><span class="split-chars">Arpit</span></span>
+          <span class="line"><em class="split-chars">Bhomia</em></span>
+        </h1>
+        <p class="hero__role mono h-in"><span class="hero__prompt">&gt;</span> <span id="typed">Competitive Programmer</span><span class="caret">_</span></p>
+        <p class="hero__lede h-in">
+          CSE student at <b>IIT Bhilai</b>. Competitive programming is my main focus. I'm an <b class="cf-expert">Expert</b>
+          on Codeforces, a <b class="cc-5">5★</b> coder on CodeChef and an <b>ICPC Regionalist</b> (AIR 40, Kanpur
+          Regional). I've been a Software Engineering Intern at Visa.
+        </p>
+        <ul class="hero__facts mono h-in">
+          <li><span>codeforces</span> 1810 max</li>
+          <li><span>codechef</span> 2007 max</li>
+          <li><span>solved</span> 2000+</li>
+          <li><span>cgpa</span> 9.45</li>
+        </ul>
+        <div class="hero__cta h-in">
+          <a href="#cp" class="btn" data-magnetic><span>Competitive programming</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--line" data-magnetic><span>Contact</span></a>
+        </div>
+      </div>
+      <p class="hero__caption mono h-in">bfs on a random graph →</p>
+      <a href="#about" class="hero__scroll mono" aria-label="Scroll to about"><span>scroll</span><i></i></a>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Codeforces Expert</span><b>✦</b><span>CodeChef 5★</span><b>✦</b><span>ICPC Regionalist</span><b>✦</b><span>2000+ problems</span><b>✦</b><span>IICPC Codefest</span><b>✦</b><span>IICPC Quantfest</span><b>✦</b><span>Visa</span><b>✦</b><span>IIT Bhilai</span><b>✦</b>
+        <span>Codeforces Expert</span><b>✦</b><span>CodeChef 5★</span><b>✦</b><span>ICPC Regionalist</span><b>✦</b><span>2000+ problems</span><b>✦</b><span>IICPC Codefest</span><b>✦</b><span>IICPC Quantfest</span><b>✦</b><span>Visa</span><b>✦</b><span>IIT Bhilai</span><b>✦</b>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="sec" id="about">
+      <header class="sec__head">
+        <span class="sec__id mono reveal">Problem A</span>
+        <h2 class="split-chars">About me</h2>
+      </header>
+
+      <div class="about">
+        <div class="about__text reveal">
+          <p class="about__big">
+            I'm a B.Tech Computer Science student at <b>IIT Bhilai</b>. My main focus is competitive programming,
+            and I'd describe myself as a problem solver first.
+          </p>
+          <p>
+            I've solved 2000+ problems across platforms. I'm an Expert on Codeforces (max 1810, top 3.95%) and a 5-star
+            coder on CodeChef (max 2007), and I finished AIR 40 at the ICPC Kanpur Regional Contest.
+          </p>
+          <p>
+            Alongside CP, I've done full-stack development, machine learning and quantitative finance. In summer 2026 I interned at
+            <b>Visa</b> as a Software Engineering Intern.
+          </p>
+          <p>
+            From April 2025 to March 2026 I was the coordinator of <b>Ingenuity</b>, the competitive programming club
+            of IIT Bhilai.
+          </p>
+        </div>
+
+        <dl class="stats">
+          <div class="reveal tilt"><dt>CGPA</dt><dd><span data-count="9.45" data-dec="2">9.45</span><small>/10</small></dd></div>
+          <div class="reveal tilt"><dt>ICPC Kanpur Regional</dt><dd>AIR <span data-count="40">40</span></dd></div>
+          <div class="reveal tilt"><dt>Codeforces max</dt><dd class="cf-expert"><span data-count="1810">1810</span></dd></div>
+          <div class="reveal tilt"><dt>CodeChef max</dt><dd class="cc-5"><span data-count="2007">2007</span></dd></div>
+          <div class="reveal tilt"><dt>Problems solved</dt><dd><span data-count="2000">2000</span>+</dd></div>
+          <div class="reveal tilt"><dt>Rated CF contests</dt><dd><span data-count="104" id="statContests">104</span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ COMPETITIVE PROGRAMMING ============ -->
+    <section class="sec" id="cp">
+      <header class="sec__head">
+        <span class="sec__id mono reveal">Problem B</span>
+        <h2 class="split-chars">Competitive programming</h2>
+        <span class="sec__limits mono reveal">codeforces · codechef · leetcode · icpc</span>
+      </header>
+
+      <div class="cf reveal">
+        <div class="cf__top">
+          <div>
+            <p class="mono cf__handle">
+              <a href="https://codeforces.com/profile/kingAB" target="_blank" rel="noopener">codeforces.com/profile/<b>kingAB</b></a>
+            </p>
+            <p class="cf__sub">Codeforces rating history <span class="mono live" id="cfLive">snapshot · oct 2026</span></p>
+          </div>
+          <dl class="cf__nums mono">
+            <div><dt>max</dt><dd class="cf-expert">1810</dd></div>
+            <div><dt>now</dt><dd id="cfNow">1540</dd></div>
+            <div><dt>contests</dt><dd id="cfCount">104</dd></div>
+          </dl>
+        </div>
+        <div class="chart" id="ratingChart">
+          <div class="chart__tip mono" id="chartTip" hidden></div>
+        </div>
+        <p class="cf__peak mono" id="peakNote">max 1810</p>
+      </div>
+
+      <div class="cp-grid">
+        <div class="card reveal">
+          <h3 class="card__title">Problems by tag</h3>
+          <p class="card__sub">Accepted Codeforces problems (1,135). One problem can have more than one tag.</p>
+          <ul class="bars" id="tagBars"></ul>
+        </div>
+        <div class="card reveal">
+          <h3 class="card__title">Problems by rating</h3>
+          <p class="card__sub">Accepted Codeforces problems, grouped by problem rating.</p>
+          <div class="hist" id="diffHist"></div>
+        </div>
+      </div>
+
+      <div class="platforms">
+        <a class="plat reveal tilt" href="https://codeforces.com/profile/kingAB" target="_blank" rel="noopener">
+          <span class="plat__name mono">Codeforces</span>
+          <span class="plat__num cf-expert">1810</span>
+          <span class="plat__meta">Expert · top 3.95% · @kingAB</span>
+        </a>
+        <a class="plat reveal tilt" href="https://www.codechef.com/users/kingab" target="_blank" rel="noopener">
+          <span class="plat__name mono">CodeChef</span>
+          <span class="plat__num cc-5">2007</span>
+          <span class="plat__meta">5★ · @kingab</span>
+        </a>
+        <a class="plat reveal tilt" href="https://leetcode.com/u/KingAB/" target="_blank" rel="noopener">
+          <span class="plat__name mono">LeetCode</span>
+          <span class="plat__num lc">450+</span>
+          <span class="plat__meta">problems solved · @KingAB</span>
+        </a>
+        <div class="plat reveal tilt">
+          <span class="plat__name mono">All platforms</span>
+          <span class="plat__num">2000+</span>
+          <span class="plat__meta">problems solved</span>
+        </div>
+      </div>
+
+      <h3 class="sub reveal">Contest results</h3>
+      <ol class="standings">
+        <li class="reveal">
+          <span class="st__rank mono">AIR 40</span>
+          <span class="st__name">ICPC Asia Kanpur Regional Contest<small>ICPC Regionalist</small></span>
+          <span class="verdict mono">Accepted</span>
+          <a class="st__link mono" href="https://drive.google.com/file/d/1AKEwanvFi0r4us-Iwh52z7_bFO9hl2RT/view?usp=sharing" target="_blank" rel="noopener">certificate ↗</a>
+        </li>
+        <li class="reveal">
+          <span class="st__rank mono">#286</span>
+          <span class="st__name">IICPC Quantfest 2026<small>Regionalist · global rank 286 (top 2%)</small></span>
+          <span class="verdict mono">Accepted</span>
+          <a class="st__link mono" href="https://drive.google.com/file/d/1RZVi-ZG06zpvr4HzUPxtIoeXJsBVufxl/view?usp=sharing" target="_blank" rel="noopener">certificate ↗</a>
+        </li>
+        <li class="reveal">
+          <span class="st__rank mono">#341</span>
+          <span class="st__name">IICPC Codefest 2026<small>Regionalist · global rank 341 (top 3%)</small></span>
+          <span class="verdict mono">Accepted</span>
+          <a class="st__link mono" href="https://drive.google.com/file/d/1-gRtp8R1boBsxIMgFz_MGXBup22sw71F/view?usp=sharing" target="_blank" rel="noopener">certificate ↗</a>
+        </li>
+        <li class="reveal">
+          <span class="st__rank mono">#224</span>
+          <span class="st__name">Codeforces Round 1060 (Div. 2)<small>global rank 224 · top 30 in India</small></span>
+          <span class="verdict mono">Accepted</span>
+          <a class="st__link mono" href="https://codeforces.com/contests/with/kingAB" target="_blank" rel="noopener">contests ↗</a>
+        </li>
+        <li class="reveal">
+          <span class="st__rank mono">#23</span>
+          <span class="st__name">CodeChef contests<small>rank 23 in a Division 3 contest · rank 26 in a Division 2 contest</small></span>
+          <span class="verdict mono">Accepted</span>
+          <a class="st__link mono" href="https://www.codechef.com/users/kingab" target="_blank" rel="noopener">profile ↗</a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="sec" id="experience">
+      <header class="sec__head">
+        <span class="sec__id mono reveal">Problem C</span>
+        <h2 class="split-chars">Experience</h2>
+      </header>
+
+      <div class="jobs">
+        <div class="jobs__line" aria-hidden="true"><i id="jobsFill"></i></div>
+
+        <article class="job reveal">
+          <div class="job__when mono">May – Jul 2026</div>
+          <div class="job__body">
+            <h3>Software Engineering Intern <span class="at">@ Visa</span></h3>
+            <ul>
+              <li>Built and integrated an <b>Autonomous UI Testing Agent</b> (LangChain, Playwright) into the developer workflow. It replaced manual QA scripting and cut test automation time by <b>80%</b>, which sped up release cycles.</li>
+              <li>Expanded test coverage <b>3×</b> using dynamic user inputs, and built a <b>RAG-based layer</b> that cut LLM token consumption by about 40%. Used multithreading to speed up heavy document processing.</li>
+              <li>Built a scalable <b>video-to-document ingestion pipeline</b> that turns UI session recordings into automated test flows. Deployed a human-in-the-loop validation dashboard that cut false-negative test failures by <b>90%</b>.</li>
+            </ul>
+            <div class="job__foot">
+              <div class="chips"><span>LangChain</span><span>Playwright</span><span>RAG</span><span>Python</span><span>Multithreading</span></div>
+              <a class="link mono" href="https://drive.google.com/file/d/13GhCkX1QVvYdtdJaDtV0RXO_nnD1JWgR/view?usp=sharing" target="_blank" rel="noopener">certificate ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job__when mono">Apr 2025 – Mar 2026</div>
+          <div class="job__body">
+            <h3>Coordinator <span class="at">@ Ingenuity, the CP club of IIT Bhilai</span></h3>
+            <ul>
+              <li>Led weekly problem-solving sessions and organised <b>6+ contests</b> for <b>100+ students</b>. The club produced <b>4 ICPC regional qualifiers</b>.</li>
+              <li>Mentored <b>10+ juniors</b> in algorithms and contest strategy, which helped them gain 200–400 rating points.</li>
+              <li>Helped strengthen the institute's competitive programming culture and improve student performance in contests.</li>
+            </ul>
+            <div class="job__foot">
+              <div class="chips"><span>Leadership</span><span>Mentoring</span><span>Contest setting</span></div>
+              <a class="link mono" href="https://drive.google.com/file/d/1u6JAN_XG_Pw_ksOsAn68UORq4Pp7Os4I/view?usp=sharing" target="_blank" rel="noopener">certificate ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job__when mono">Dec 2024</div>
+          <div class="job__body">
+            <h3>Algorithm Designer <span class="at">@ Inter-IIT Tech Meet</span></h3>
+            <ul>
+              <li>Part of the IIT Bhilai delegation for the Quantitative Finance Challenge. Designed algorithmic trading strategies for Bitcoin and Ethereum using volatility modelling and trend analysis.</li>
+              <li>Ran simulation-based backtests on historical cryptocurrency data, evaluated on ROI and Sharpe ratio.</li>
+            </ul>
+            <div class="job__foot"><div class="chips"><span>Python</span><span>Backtesting</span><span>Quant</span></div></div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job__when mono">Sep 2024 – May 2025</div>
+          <div class="job__body">
+            <h3>Core Member <span class="at">@ DSAI Club, IIT Bhilai</span></h3>
+            <ul>
+              <li>Conducted ML workshops for <b>80+ students</b> covering TensorFlow and OpenCV, and guided hands-on mini-projects.</li>
+              <li>Created a project-based curriculum and resources that 20+ students used to complete guided mini-projects.</li>
+            </ul>
+            <div class="job__foot"><div class="chips"><span>TensorFlow</span><span>OpenCV</span><span>Workshops</span></div></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="sec" id="projects">
+      <header class="sec__head">
+        <span class="sec__id mono reveal">Problem D</span>
+        <h2 class="split-chars">Projects</h2>
+      </header>
+
+      <article class="proj">
+        <div class="proj__media reveal-img">
+          <figure class="shot shot--term">
+            <div class="shot__bar"><i></i><i></i><i></i><span class="mono">termichat</span></div>
+            <img src="assets/img/termichat-chat.webp" width="1000" height="654" loading="lazy" decoding="async" alt="TermiChat chat window running in a terminal" />
+          </figure>
+          <figure class="shot shot--float">
+            <img src="assets/img/termichat-invite.webp" width="1000" height="661" loading="lazy" decoding="async" alt="TermiChat connection request dialog" />
+          </figure>
+        </div>
+        <div class="proj__text reveal">
+          <p class="proj__meta mono"><span class="proj__num">01</span> Jul – Aug 2025 · C/C++</p>
+          <h3>TermiChat</h3>
+          <p>
+            A decentralised P2P terminal chat app with AES-256 encrypted messaging, secure file transfer and
+            permission-based handshakes, built on custom raw TCP sockets. It stores friends and message history.
+            A thread-safe producer-consumer queue with mutex locks gets about 150 msgs/sec while chat history is
+            saved to SQLite3. The UI is built with ncurses.
+          </p>
+          <div class="chips"><span>C/C++</span><span>POSIX Sockets</span><span>OpenSSL</span><span>SQLite3</span><span>Multithreading</span><span>ncurses</span></div>
+          <p class="proj__links mono">
+            <a href="https://github.com/KingAB2004/TermiChat" target="_blank" rel="noopener">github ↗</a>
+            <a href="https://youtu.be/eoiH_R9Fon0" target="_blank" rel="noopener">video ↗</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="proj proj--flip">
+        <div class="proj__media reveal-img">
+          <figure class="shot">
+            <div class="shot__bar"><i></i><i></i><i></i><span class="mono">os-dashboard</span></div>
+            <img src="assets/img/os-dashboard.webp" width="1000" height="818" loading="lazy" decoding="async" alt="OS Dashboard showing scheduled jobs and the task report" />
+          </figure>
+        </div>
+        <div class="proj__text reveal">
+          <p class="proj__meta mono"><span class="proj__num">02</span> Feb – Mar 2026 · C++ / Linux</p>
+          <h3>Web Designed Custom OS Scheduler</h3>
+          <p>
+            A full-stack system automation dashboard with a React UI and a C++ (Crow) microservice backend. A
+            multithreaded worker daemon and SQLite securely schedule and run background Linux tasks.
+          </p>
+          <div class="chips"><span>C++</span><span>Crow</span><span>React.js</span><span>SQLite3</span><span>Linux (systemd)</span><span>Bash</span><span>Multithreading</span></div>
+          <p class="proj__links mono">
+            <a href="https://github.com/KingAB2004/WebDesignedCustomOS_Scheduler" target="_blank" rel="noopener">github ↗</a>
+            <a href="https://youtu.be/e9ZFx8cg0gw" target="_blank" rel="noopener">video ↗</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="proj">
+        <div class="proj__media reveal-img">
+          <figure class="shot">
+            <div class="shot__bar"><i></i><i></i><i></i><span class="mono">warranty-storage-wh5d.vercel.app</span></div>
+            <img src="assets/img/warranty-home.webp" width="1200" height="600" loading="lazy" decoding="async" alt="Warranty Storage landing page" />
+          </figure>
+          <figure class="shot shot--float">
+            <img src="assets/img/warranty-chatbot.webp" width="1200" height="600" loading="lazy" decoding="async" alt="Warranty Storage dashboard with the AI chatbot open" />
+          </figure>
+        </div>
+        <div class="proj__text reveal">
+          <p class="proj__meta mono"><span class="proj__num">03</span> Aug 2024 – Jan 2025 · MERN</p>
+          <h3>Warranty Storage Platform</h3>
+          <p>
+            A MERN warranty management platform for small and mid-sized businesses. It has JWT authentication, 10MB
+            media uploads, expiry tracking and multi-field search, and manages 500+ active records. A LLaMA-3 RAG AI
+            chatbot with client-side data caching cut MongoDB load by 70%.
+          </p>
+          <div class="chips"><span>MongoDB</span><span>Express.js</span><span>React.js</span><span>Node.js</span><span>Groq LLaMA-3</span><span>SendGrid</span><span>JWT</span></div>
+          <p class="proj__links mono">
+            <a href="https://github.com/KingAB2004/WarrantyStorage" target="_blank" rel="noopener">github ↗</a>
+            <a href="https://warranty-storage-wh5d.vercel.app/" target="_blank" rel="noopener">website ↗</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="proj proj--flip">
+        <div class="proj__media proj__media--pair reveal-img">
+          <figure class="shot shot--popup"><img src="assets/img/cpbutler-front.webp" width="391" height="700" loading="lazy" decoding="async" alt="CP Butler handle setup screen" /></figure>
+          <figure class="shot shot--popup"><img src="assets/img/cpbutler-dash.webp" width="375" height="700" loading="lazy" decoding="async" alt="CP Butler daily progress and Codeforces stats" /></figure>
+        </div>
+        <div class="proj__text reveal">
+          <p class="proj__meta mono"><span class="proj__num">04</span> May – Jun 2025 · Chrome extension</p>
+          <h3>CP Butler</h3>
+          <p>
+            A browser extension for competitive programmers. It tracks your daily progress on Codeforces and LeetCode,
+            shows submission stats and upcoming contests, and puts it all on one dashboard. It cut cross-platform
+            tracking time by over 80% and has 100+ users.
+          </p>
+          <div class="chips"><span>TypeScript</span><span>React.js</span><span>Chrome Extensions API</span><span>REST APIs</span></div>
+          <p class="proj__links mono">
+            <a href="https://github.com/KingAB2004/CP-Butler" target="_blank" rel="noopener">github ↗</a>
+            <a href="https://youtu.be/QRyYwGxFTAI" target="_blank" rel="noopener">video ↗</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="proj">
+        <div class="proj__media reveal-img">
+          <figure class="shot">
+            <img src="assets/img/bomberman.webp" width="1100" height="733" loading="lazy" decoding="async" alt="Bomberman AI gameplay" />
+          </figure>
+        </div>
+        <div class="proj__text reveal">
+          <p class="proj__meta mono"><span class="proj__num">05</span> CSL304 Artificial Intelligence · group project</p>
+          <h3>Bomberman AI</h3>
+          <p>
+            A Bomberman game in Python (Tkinter) with AI-controlled bots. The player and the bots move around a
+            destructible grid, placing bombs and avoiding explosions, and the last one alive wins. The bots navigate
+            the grid, place bombs strategically and hunt down the player.
+          </p>
+          <div class="chips"><span>Python</span><span>Tkinter</span><span>A*</span><span>Dijkstra</span><span>BFS</span></div>
+          <p class="proj__links mono">
+            <a href="https://github.com/VARUN3WARE/Bomberman-AI-Project-Group-17-CSL304-Artificial-Intelligence-" target="_blank" rel="noopener">github ↗</a>
+            <a href="https://www.youtube.com/watch?v=fGdCZeGzFvk" target="_blank" rel="noopener">video ↗</a>
+          </p>
+        </div>
+      </article>
+
+      <p class="more reveal"><a class="link mono" href="https://github.com/KingAB2004?tab=repositories" target="_blank" rel="noopener">more on github.com/KingAB2004 ↗</a></p>
+    </section>
+
+    <!-- ============ COURSEWORK ============ -->
+    <section class="sec" id="coursework">
+      <header class="sec__head">
+        <span class="sec__id mono reveal">Problem E</span>
+        <h2 class="split-chars">Coursework</h2>
+        <span class="sec__limits mono reveal">B.Tech CSE · IIT Bhilai · 2023 – 2027</span>
+      </header>
+
+      <div class="cw-top reveal">
+        <div class="cw-score"><span class="cw-score__num" data-count="9.45" data-dec="2">9.45</span><span class="mono">CGPA / 10</span></div>
+        <div class="cw-score"><span class="cw-score__num" data-count="10" data-dec="1">10.0</span><span class="mono">SGPA, 2025-26 winter</span></div>
+        <div class="cw-score"><span class="cw-score__num">2027</span><span class="mono">expected graduation, May</span></div>
+        <a class="btn btn--line" href="https://drive.google.com/file/d/1DxZexDvvrMQhTX56p9WCXKggQaA6l9SV/view?usp=drive_link" target="_blank" rel="noopener" data-magnetic><span>transcript ↗</span></a>
+      </div>
+
+      <div class="cw">
+        <div class="cw-group reveal tilt">
+          <h3><span class="mono">01</span> Algorithms &amp; theory</h3>
+          <ul>
+            <li><code>CSL202</code> Data Structures <em>A+</em></li>
+            <li><code>CSL252</code> Design &amp; Analysis of Algorithms</li>
+            <li><code>CSL253</code> Theory of Computation <em>A+</em></li>
+            <li><code>CSL201</code> Discrete Mathematics</li>
+            <li><code>CSL511</code> Formal Verification &amp; its Applications <em>A+</em></li>
+            <li><code>CSL302</code> Compiler Design</li>
+          </ul>
+        </div>
+        <div class="cw-group reveal tilt">
+          <h3><span class="mono">02</span> Systems</h3>
+          <ul>
+            <li><code>CSL301</code> Operating Systems <em>A+</em></li>
+            <li><code>CSL251</code> Computer Organization &amp; Architecture <em>A+</em></li>
+            <li><code>CSL516</code> Parallelization of Programs <em>A+</em></li>
+            <li><code>CSL303</code> Database Management Systems <em>A</em></li>
+            <li><code>CSP203</code> Software Tools &amp; Technologies Lab</li>
+          </ul>
+        </div>
+        <div class="cw-group reveal tilt">
+          <h3><span class="mono">03</span> Networks &amp; security</h3>
+          <ul>
+            <li><code>CSL351</code> Computer Networks <em>A+</em></li>
+            <li><code>DSL353</code> Information Security <em>A+</em></li>
+            <li><code>UGQ301</code> Interdisciplinary UG Project <em>A</em></li>
+          </ul>
+          <h3 class="cw-gap"><span class="mono">04</span> AI &amp; maths</h3>
+          <ul>
+            <li><code>CSL304</code> Artificial Intelligence</li>
+            <li><code>MAL403</code> Probability &amp; Statistics</li>
+            <li><code>MAL100/101</code> Mathematics I &amp; II</li>
+          </ul>
+        </div>
+        <div class="cw-group reveal tilt">
+          <h3><span class="mono">05</span> Humanities &amp; management</h3>
+          <ul>
+            <li><code>LAL101</code> Introduction to Finance <em>A+</em></li>
+            <li><code>LAL201</code> Microeconomics</li>
+            <li><code>LAL202</code> International Trade</li>
+            <li><code>LAL501</code> Entrepreneurship &amp; Venture Creation</li>
+            <li><code>LAL244</code> Leadership: an Organizational Behaviour Perspective <em>A</em></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION / HONOURS ============ -->
+    <section class="sec" id="education">
+      <header class="sec__head">
+        <span class="sec__id mono reveal">Problem F</span>
+        <h2 class="split-chars">Education &amp; achievements</h2>
+      </header>
+      <div class="edu">
+        <div class="edu__row reveal"><span class="mono">2023 – 2027</span><b>IIT Bhilai</b><span>B.Tech, Computer Science &amp; Engineering</span><span class="edu__val">9.45</span></div>
+        <div class="edu__row reveal"><span class="mono">2023</span><b>JEE Advanced</b><span>All India Rank 4500 among 180,000+ candidates</span><span class="edu__val">AIR 4500</span></div>
+        <div class="edu__row reveal"><span class="mono">2024</span><b>ATF 2024</b><span>Cleared Round 2, top 1% of 10,000+ participants</span><span class="edu__val">top 1%</span></div>
+        <div class="edu__row reveal"><span class="mono">2024</span><b>Data Science Bootcamp, IIT Guwahati</b><span>Certificate of Excellence · <a class="link" href="https://drive.google.com/file/d/1OE323R_7btr_w5SpKnK1nYFiEQTgoc3V/view?usp=sharing" target="_blank" rel="noopener">certificate ↗</a></span><span class="edu__val">top 10%</span></div>
+        <div class="edu__row reveal"><span class="mono">2021 – 2023</span><b>Bhabha Public School, Jaipur</b><span>Class XII, CBSE</span><span class="edu__val">90.2%</span></div>
+        <div class="edu__row reveal"><span class="mono">2019 – 2021</span><b>Sanskar School, Jaipur</b><span>Class X, CBSE</span><span class="edu__val">95.5%</span></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="sec contact" id="contact">
+      <header class="sec__head">
+        <span class="sec__id mono reveal">Problem G</span>
+        <h2 class="split-chars">Contact</h2>
+      </header>
+      <div class="contact__grid">
+        <div class="contact__card reveal tilt">
+          <p class="contact__lead">Have a project in mind or just want to chat? Let's connect!</p>
+          <span class="contact__label mono">email</span>
+          <a class="contact__mail" href="mailto:arpitbhomia1204@gmail.com">arpitbhomia1204@gmail.com</a>
+          <div class="contact__row">
+            <button class="btn btn--line mono" id="copyMail" type="button" data-magnetic><span>copy email</span></button>
+            <a class="btn" href="assets/Arpit_Bhomia_Resume.pdf" target="_blank" rel="noopener" data-magnetic><span>Download résumé</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <p class="contact__loc mono"><span class="dot"></span> Jaipur, India · IIT Bhilai</p>
+        </div>
+
+        <ul class="socials">
+          <li class="reveal"><a class="social tilt" href="https://github.com/KingAB2004" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+            <span class="social__name">GitHub</span><span class="social__handle mono">KingAB2004</span><span class="social__arrow">↗</span></a></li>
+          <li class="reveal"><a class="social tilt" href="https://www.linkedin.com/in/arpit-bhomia-52783b28a/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+            <span class="social__name">LinkedIn</span><span class="social__handle mono">arpit-bhomia</span><span class="social__arrow">↗</span></a></li>
+          <li class="reveal"><a class="social tilt" href="https://codeforces.com/profile/kingAB" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 7.5A1.5 1.5 0 0 1 6 9v10.5A1.5 1.5 0 0 1 4.5 21h-3A1.5 1.5 0 0 1 0 19.5V9a1.5 1.5 0 0 1 1.5-1.5h3Zm9-4.5A1.5 1.5 0 0 1 15 4.5v15a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 19.5v-15A1.5 1.5 0 0 1 10.5 3h3Zm9 7.5A1.5 1.5 0 0 1 24 12v7.5a1.5 1.5 0 0 1-1.5 1.5h-3a1.5 1.5 0 0 1-1.5-1.5V12a1.5 1.5 0 0 1 1.5-1.5h3Z"/></svg>
+            <span class="social__name">Codeforces</span><span class="social__handle mono">kingAB</span><span class="social__arrow">↗</span></a></li>
+          <li class="reveal"><a class="social tilt" href="https://www.codechef.com/users/kingab" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 11.5a4 4 0 0 1-.8-7.9A5 5 0 0 1 12 1a5 5 0 0 1 5.8 2.6 4 4 0 0 1-.8 7.9V17H7v-5.5ZM7 19h10v2.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 7 21.5V19Z"/></svg>
+            <span class="social__name">CodeChef</span><span class="social__handle mono">kingab</span><span class="social__arrow">↗</span></a></li>
+          <li class="reveal"><a class="social tilt" href="https://leetcode.com/u/KingAB/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.48 0a1.37 1.37 0 0 0-.96.44L7.12 6.21l-2.9 3.11a5.25 5.25 0 0 0-1.28 2.38 5.6 5.6 0 0 0-.04 2.42 5.6 5.6 0 0 0 1.53 2.88l4.33 4.36c1.3 1.31 3.06 1.94 4.86 1.94 1.8 0 3.56-.67 4.86-1.98l2.6-2.63a1.37 1.37 0 1 0-1.95-1.92l-2.65 2.67c-.77.78-1.74 1.12-2.86 1.12-1.12 0-2.1-.34-2.86-1.12L6.43 15.4a2.8 2.8 0 0 1-.79-1.5 2.9 2.9 0 0 1 .02-1.24c.1-.43.3-.83.66-1.2l2.86-3.07 5.38-5.77A1.37 1.37 0 0 0 13.48 0ZM9.92 13.33a1.37 1.37 0 1 0 0 2.74h11.66a1.37 1.37 0 1 0 0-2.74H9.92Z"/></svg>
+            <span class="social__name">LeetCode</span><span class="social__handle mono">KingAB</span><span class="social__arrow">↗</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>© <span id="year">2026</span> Arpit Bhomia</span>
+    <a href="#top" class="mono">back to top ↑</a>
+  </footer>
+  <div class="toast mono" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
